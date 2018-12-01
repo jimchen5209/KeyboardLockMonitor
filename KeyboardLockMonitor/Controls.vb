@@ -30,9 +30,11 @@
 
     Private Sub MoveButton_CheckedChanged(sender As Object, e As EventArgs) Handles MoveButton.CheckedChanged
         My.Settings.canMove = MoveButton.Checked
-        MoveButton.Checked = My.Settings.canMove
         My.Settings.Save()
     End Sub
 
-
+    Private Sub showTip_CheckedChanged(sender As Object, e As EventArgs) Handles showTip.CheckedChanged
+        My.Settings.showTip = showTip.Checked
+        My.Settings.Save()
+    End Sub
 End Class
