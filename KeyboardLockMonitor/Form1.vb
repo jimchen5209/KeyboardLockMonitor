@@ -41,7 +41,7 @@
         Me.Location = My.Settings.position
         Me.Show()
         If My.Settings.showTip Then
-            MessageBox.Show("對視窗點兩下以開啟設定視窗", "鍵盤鎖定監視器", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("對視窗點兩下以開啟設定視窗\n如果不小心把視窗移到看不到的地方，可嘗試在啟動此程式時增加'--resetConfig'參數", "鍵盤鎖定監視器", MessageBoxButtons.OK, MessageBoxIcon.Information)
             My.Settings.showTip = False
             My.Settings.Save()
         End If
