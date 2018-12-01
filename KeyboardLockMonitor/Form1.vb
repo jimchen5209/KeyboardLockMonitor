@@ -10,21 +10,6 @@
         Else
             Me.Cursor = Cursors.Default
         End If
-        'If My.Computer.Keyboard.NumLock Then
-        '    Label1.BackColor = Color.Blue
-        'Else
-        '    Label1.BackColor = TransparencyKey
-        'End If
-        'If My.Computer.Keyboard.CapsLock Then
-        '    Label2.BackColor = Color.Blue
-        'Else
-        '    Label2.BackColor = TransparencyKey
-        'End If
-        'If My.Computer.Keyboard.ScrollLock Then
-        '    Label3.BackColor = Color.Blue
-        'Else
-        '    Label3.BackColor = TransparencyKey
-        'End If
         Label1.Visible = My.Computer.Keyboard.NumLock
         Label2.Visible = My.Computer.Keyboard.CapsLock
         Label3.Visible = My.Computer.Keyboard.ScrollLock
