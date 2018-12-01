@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.Resources
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -8,10 +9,10 @@ Imports System.Runtime.InteropServices
 
 ' 檢閱組件屬性的值
 
-<Assembly: AssemblyTitle("WindowsApp1")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyTitle("鍵盤鎖定監視器")>
+<Assembly: AssemblyDescription("在螢幕中查看電腦Num Caps Scr的狀態")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("WindowsApp1")>
+<Assembly: AssemblyProduct("KeyboardLockMonitor")>
 <Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>
 
@@ -33,3 +34,4 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.0.0.0")>
 <Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: NeutralResourcesLanguage("")>
