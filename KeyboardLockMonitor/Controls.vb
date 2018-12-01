@@ -26,6 +26,8 @@
         Form1OpacityText.Text = Form1Opacity.Value & "%"
         MoveButton.Checked = My.Settings.canMove
         showTip.Checked = My.Settings.showTip
+        Dim toolTip As New ToolTip
+        toolTip.SetToolTip(showTipBtn, "立即顯示提示")
     End Sub
 
     Private Sub MoveButton_CheckedChanged(sender As Object, e As EventArgs) Handles MoveButton.CheckedChanged
@@ -36,5 +38,9 @@
     Private Sub showTip_CheckedChanged(sender As Object, e As EventArgs) Handles showTip.CheckedChanged
         My.Settings.showTip = showTip.Checked
         My.Settings.Save()
+    End Sub
+
+    Private Sub showTipBtn_Click(sender As Object, e As EventArgs) Handles showTipBtn.Click
+        MessageBox.Show(Form1.tipText, Form1.title, MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 End Class

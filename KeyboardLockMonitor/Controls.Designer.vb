@@ -29,6 +29,7 @@ Partial Class Controls
         Me.EndButton = New System.Windows.Forms.Button()
         Me.MoveButton = New System.Windows.Forms.CheckBox()
         Me.showTip = New System.Windows.Forms.CheckBox()
+        Me.showTipBtn = New System.Windows.Forms.Button()
         CType(Me.Form1Opacity, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -103,11 +104,21 @@ Partial Class Controls
         Me.showTip.Text = "啟動時顯示提示"
         Me.showTip.UseVisualStyleBackColor = True
         '
+        'showTipBtn
+        '
+        Me.showTipBtn.Location = New System.Drawing.Point(125, 124)
+        Me.showTipBtn.Name = "showTipBtn"
+        Me.showTipBtn.Size = New System.Drawing.Size(20, 23)
+        Me.showTipBtn.TabIndex = 7
+        Me.showTipBtn.Text = "?"
+        Me.showTipBtn.UseVisualStyleBackColor = True
+        '
         'Controls
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(280, 150)
+        Me.Controls.Add(Me.showTipBtn)
         Me.Controls.Add(Me.showTip)
         Me.Controls.Add(Me.MoveButton)
         Me.Controls.Add(Me.EndButton)
@@ -137,4 +148,5 @@ Partial Class Controls
     Friend WithEvents EndButton As Button
     Friend WithEvents MoveButton As CheckBox
     Friend WithEvents showTip As CheckBox
+    Friend WithEvents showTipBtn As Button
 End Class
